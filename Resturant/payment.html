@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantista | Payment</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="css/payment.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="./Images/restaurantista-logo.jpg" alt="Restaurantista Logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="home-page.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form action="your-payment-processing-url" id="payment-form">
+            <label for="name">Name on card:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="card-number">Card number:</label>
+            <input 
+                type="text" 
+                id="card-number" 
+                name="card-number" 
+                required 
+                pattern="[0-9]{13,16}"
+                aria-label="Card number"
+            >
+
+            <label for="CVC">CVC:</label>
+            <input
+                type="text"
+                id="CVC"
+                name="CVC"
+                required
+                pattern="[0-9]{3,4}"
+                aria-label="CVC"
+            >
+
+            <label for="expiration-date">Expiration date:</label>
+            <input 
+                type="text"
+                id="expiration-date"
+                name="expiration-date"
+                required
+                aria-label="Expiration date"
+                placeholder="MM/YY"
+            >
+
+            <button type="submit" id="pay-button">Pay</button>
+        </form>
+        <div id="sucess-message" >
+          <p>
+            Thank you for your payment.Your order will be deliverd within 1 hour.
+          </p>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>
+            At our website,we combine food with convenience of online ordering,with just few clicks,you can explore our menu,select your favorite dishes,and have them delivered to you.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <p>
+            123Main st.<br/>
+            Anytown Kosovo 10000. <br/>
+            Email:Order@restuarantista.org. <br/>
+            Phone:044-000-000
+          </p>
+        </div>
+        <div class="footer-column">
+          <img src="Images/restaurantista-logo.jpg" alt="restaurantista-logo" class="footer-logo">
+          <h3>Follow us</h3>
+          <div class="social-media-icons">
+            <a href="https://www.facebook.com/Valon.Barcelonist">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://x.com/x.">
+              <i class="fa-solid fa-x"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-botton">
+        2024 Restuarntista all right reserved <i class="fa-regular fa-copyright"></i>
+      </p>
+    </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body { 
+            margin: 0;
+            padding: 0;
+        }
+        .elementi {
+            height: 100%;
+            width: 100%;
+            font-size: 20px;
+            background-color: blue;
+            color: white;
+            font-weight: 700;
+            display: grid;
+            place-items: center;
+        }
+
+        .elementet {
+            border: solid 2px red;
+            height: 80vh;
+            gap: 5px;
+            display: grid;
+
+            grid-template-columns: repeat(4, 150px);
+            grid-template-rows: repeat(3, 150px);
+            justify-items: center;
+            align-items: center;
+       
+        }
+        .elementi1 {
+            background-color: blue;
+            grid-row: 1 / 3 ;
+
+        }
+        .elementi2 {
+            background-color: red;
+        }
+        .elementi3 {
+            background-color: green;
+            grid-column: 3 / 5 ;
+        }
+        .elementi4 {
+            background-color: blueviolet;
+            grid-column: 2 / 4;
+            grid-row: 2 / 4 ;
+        }
+        .elementi5 {
+            background-color: brown;
+            grid-row: 2 / 4;
+        }
+        .elementi6 {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="elementet">
+        <div class="elementi elementi1"></div>
+        <div class="elementi elementi2"></div>
+        <div class="elementi elementi3"></div>
+        <div class="elementi elementi4"></div>
+        <div class="elementi elementi5"></div>
+        <div class="elementi elementi6"></div>
+    </div>
+</body>
+</html>

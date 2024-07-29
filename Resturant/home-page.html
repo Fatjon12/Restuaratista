@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Restuarantista</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+   <header>
+     <nav>
+        <div class="logo">
+          <a href="#"><img src="Images/restaurantista-logo.jpg" alt="logo">
+          </a>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a>
+            </li>
+            <li><a href="menu.html">Menu</a>
+            </li>
+          </ul>
+        </div>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+     </nav>
+   </header>
+   <main>
+    <section class="restaurant-section">
+      <div id="restaurant-info">
+        <h1>Restuarantista</h1>
+        <h3>Your digital restaurant</h3>
+        <button class="modern-button" onclick="openModal()">
+          Order Here
+        </button>
+      </div>
+      <div id="restaurant-image">
+        <img src="Images/hamburger-web-devs-mmks.png" alt="">
+        <div class="image-overlay">
+          <span class="overlay-text">
+            Savor the flavors of our passion
+          </span>
+         </div>
+      </div>
+    </section>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()"> &times;</span>
+        <h2> Welcome to our Amazing Digital Restuarant</h2>
+        <p>
+          Welcome to [Restaurant Name], where every meal is a journey of flavors and culinary delight! Step into our warm and inviting ambiance, where the aroma of sizzling spices and the promise of mouthwatering dishes tantalize your senses from the moment you arrive.
+        </p>
+        <h3>Order here</h3>
+        <a href="menu.html">
+          <button class="log-button">
+            Go to meny
+          </button>
+        </a>
+      </div>
+    </div>
+
+    
+    <div class="text">
+      <h1>Order with ease </h1>
+      <p>
+        Experience the convenence of ordering your favoritr dishes with just a few clicks
+      </p>
+    </div>
+    <div class="order-proces-overview">
+      <div class="order-proces">
+        <span class="icon">
+          <i class="fa-solid fa-house"></i>
+        </span>
+        <h3>Choose</h3>
+        <p>Use our Website to experience a smooth online ordering</p>
+      </div>
+      <div class="order-proces">
+        <span class="icon">
+          <i class="fa-solid fa-pizza-slice"></i>
+        </span>
+        <h3>Order</h3>
+        <p>Order your favorite dishes</p>
+      </div>
+      <div class="order-proces">
+        <span class="icon">
+          <i class="fa-solid fa-bowl-rice"></i>
+        </span>
+        <h3>Pay</h3>
+        <p>Our payment service ensures a seamless and hassie-free process</p>
+      </div>
+    </div>
+    <div class="original-taste">
+      <div class="content">
+          <h2>Origianl Taste</h2>
+          <p>
+              Feel exited to taste our amazing food and order online now!
+          </p>
+          <a href="menu.html">
+              <button class="button">
+                  Order Online
+              </button>
+          </a>
+      </div>
+  </div>
+</div>
+<section class="statistics">
+  <div class="container">
+      <h2 class="section-header">
+          We like number. How about you?
+      </h2>
+      <p class="section-description">
+          We served to amazing people who appriciate and loved out food, our success is bigger than you.
+      </p>
+      <div class="statistics-wrapper">
+          <div class="statistics">
+              <div class="statistic-number">
+                  78,000
+              </div>
+              <div class="statistic-text">
+                  Happy Costumers
+              </div>
+          </div>
+          <div class="statistics">
+              <div class="statistic-number">
+                  58
+              </div>
+              <div class="statistic-text">
+                  Delicious Dishes
+              </div>
+          </div>
+          <div class="statistics">
+              <div class="statistic-number">
+                  +100,000
+              </div>
+              <div class="statistic-text">
+                  Orders
+              </div>
+          </div>
+          <div class="statistics">
+              <div class="statistic-number">
+                  +7,000
+              </div>
+              <div class="statistic-text">
+                  Daily Visitors
+              </div>
+          </div>
+          <div class="statistics">
+              <div class="statistic-number">
+                  0
+              </div>
+              <div class="statistic-text">
+                  Physical Locations
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="about-us">
+   <div class="background-image">
+     <div class="about-us-content">
+      <h2>About Us</h2>
+      <h1>The Restaurant that never existed</h1>
+      <p>
+          Welcome to Restaurantista - where culinary delights meeet the digital realm. Our story begins with a passion for excpetional food and a vision to bring delectable flavors directly to your doorstep. As a fully online restaurant, we have reimagined the dining experience, convenience of virtual world.
+      </p>
+      <p>
+          At Restaurantista, we understand the fast-paced nature of modern life, With this in mind, we set out to create an innovative platform that seamlessly connects menu of tantalizing food lovers with a diverse menu of tantalizing dishes, all available at the clikck of a button.
+      </p>
+     </div>
+     </div>
+    
+  
+</section>
+<section class="newsletter-section">
+  <h2>Subscribe to our Newsletter</h2>
+  <form id="newsletter-form" action="#" method="POST">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <label for="checkbox">Subsribe to Newsletter:</label>
+      <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+      <input type="submit" value="Subscribe">
+  </form>
+  <div id="message-container"></div>
+</section>
+<section>
+  <div class="location">
+      <div class="address">
+          <h2>Location</h2>
+          <p>123 Main St.</p>
+          <p>Anytown, USA 12345</p>
+          <h2>Call us</h2>
+          <a href="tel:044000000">
+              044-000-000
+          </a>
+          <h2>Hours of Operation</h2>
+          <p>24/7</p>
+      </div>
+      <div class="map">
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11735.714740150206!2d21.150941998080235!3d42.662866621715445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ee398234689%3A0x1ecdd21bb52cbd0f!2sFadil%20Vokrri%20Stadium!5e0!3m2!1sen!2s!4v1716316470034!5m2!1sen!2s"
+              width="100%" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </div>
+</section>
+<section class="video">
+  <div class="video_content">
+      <h2 class="video_header">
+          Turn Your Home into a Restaurant
+      </h2>
+      <p class="video_text">
+          Are you the kind of person who relishes the joy of savoring delicious food in the comfort of your own home? If you prefer to escape the hustle and bustle of overcrowded restaurants, say goodbye to the stress of making reservations, and indulge in the convenience of dining at your own pace, then you've coem to the right place.
+      </p>
+      <div class="video__player">
+          <video 
+              class="video__iframe" 
+              src="Images/promo-video-restaurantista.mp4"
+              autoplay
+              loop
+              muted
+          >
+          </video>
+      </div>
+  </div>
+</section>
+<section class="contact-form">
+  <h2>Contact Us</h2>
+  <form action="#" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email-contact">Email:</label>
+      <input type="email" id="email-contact" name="email" required>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="message">Message</label>
+      <textarea name="message" id="message" required></textarea>
+
+      <input type="submit" value="Send">
+  </form>
+</section>
+<section class="testimonials">
+  <div class="container">
+    <h1>Testimunials</h1>
+    <div class="testimonials-container">
+      <div class="testimonials-text">
+        <p>
+          ""I recently had the pleasure of dining at [Restaurant Name], and it was an unforgettable experience from start to finish. From the moment I walked in, I was greeted with a warm and inviting atmosphere that set the tone for a fantastic evening."
+        </p>
+        <hr/>
+        <div class="testimonials-box">
+          <img src="Images/person1.jpg" alt="Joana Doe">
+          <div class="testimonials-content">
+            <p class="author-name">
+               Joana Doe
+            </p>
+          </div>
+        </div>
+      </div>
+    <div class="testimonials-text">
+      <p>
+        "
+        Certainly! Here is a testimonial for a restaurant:
+        
+        "I recently had the pleasure of dining at [Restaurant Name], and it was an unforgettable experience from start to finish. From the moment I walked in, I was greeted with a warm and inviting atmosphere that set the tone for a fantastic evening.
+        
+        The decor is tasteful and elegant, creating a perfect ambiance for both casual dining and special occasions. The staff were incredibly attentive and knowledgeable, providing excellent recommendations and ensuring that every need was met without being intrusive."
+      </p>
+      <hr/>
+      <div class="testimonials-box">
+        <img src="Images/person2.jpg" alt="Angel Ipsum">
+        <div class="tesimonials-content">
+          <p class="author-name">Angel Ipsum </p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials-text">
+      <p>
+        "As for the food, it was simply exquisite. Each dish was a delightful blend of flavors and textures, clearly prepared with the freshest ingredients and a masterful touch. The [specific dish] was a standout, with its perfectly balanced flavors that left me craving more. The presentation was also impeccable, making each course a feast for the eyes as well as the palate."
+      </p>
+      <hr/>
+      <div class="testimonials-box">
+        <img src="Images/person3.jpg" alt=" Lorena Ipsum">
+        <div class="testimonials-content">
+           <p class="author-name" >
+            Lorena Ipsum
+           </p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials-text">
+      <p>
+       "
+        I highly recommend [Restaurant Name] to anyone looking for an exceptional dining experience. Whether you're celebrating a special occasion or simply enjoying a night out, this restaurant is sure to exceed your expectations."
+      </p>
+      <hr/>
+      <div class="testimonials-box">
+        <img src="Images/person4.jpg" alt="Jor Dou">
+        <div class="testimonials-content">
+           <p class="author-name" >
+            Jor Dou
+           </p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+  </main>
+
+   <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>
+            At our website,we combine food with convenience of online ordering,with just few clicks,you can explore our menu,select your favorite dishes,and have them delivered to you.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <p>
+            123Main st.<br/>
+            Anytown Kosovo 10000. <br/>
+            Email:Order@restuarantista.org. <br/>
+            Phone:044-000-000
+          </p>
+        </div>
+        <div class="footer-column">
+          <img src="Images/restaurantista-logo.jpg" alt="restaurantista-logo" class="footer-logo">
+          <h3>Follow us</h3>
+          <div class="social-media-icons">
+            <a href="https://www.facebook.com/Valon.Barcelonist">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://x.com/x.">
+              <i class="fa-solid fa-x"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-b0tton">
+        2024 Restuarntista all right reserved <i class="fa-regular fa-copyright"></i>
+      </p>
+    </div>
+   </footer>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+<script src="ajax.js"></script>
+</body>
+</html>
